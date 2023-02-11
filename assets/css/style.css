@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f2e0e0;
+  --primary-text-color: rgb(86, 16, 151);
+  --secondary-text-color: rgb(45, 7, 80);
+}
+
+.main-container {
+  background-color: var(--primary-color);
+}
+
+/* 
+*******************
+Common Styles
+*******************
+*/
+
+.button {
+  background-color: var(--primary-text-color) !important;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+*******************
+Header
+*******************
+*/
+.absolute {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: var(--primary-text-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__list .nav__list__item a {
+  color: var(--secondary-text-color) !important;
+}
+
+.login__button {
+  color: var(--secondary-text-color) !important;
+}
+
+/* 
+*******************
+Hero Section
+*******************
+*/
+
+.hero__heading {
+  font-size: 70px !important;
+  color: var(--secondary-text-color) !important;
+}
+
+.circle-200 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--primary-text-color) !important;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.circle-50 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-text-color) !important;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.circle-50-1 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--primary-text-color) !important;
+  margin-left: 10px;
+  position: relative;
+  margin-right: 14px;
+}
+
+.rectangle-1 {
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+
+.rectangle-2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 400px;
+  left: 750px;
+}
+
+.box {
+  width: 40px;
+  height: 45px;
+  background-color: rgb(225, 226, 228);
+}
