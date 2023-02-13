@@ -38,9 +38,43 @@
   </head>
   <body>
     <div class="conatiner-fluid min-vh-100 main-container">
+
       <!-- Header Code start -->
-      <header class="position-relative fixed-top">
-        <div class="container absolute">
+      <header class="position-relative">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+          <div class="container">
+            <div class="col-3 fw-bold text-indigo-600">
+              <a href="#" class="logo text-decoration-none fs-2">Besnik</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav__list navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item nav__list__item fw-bold">
+                  <a class="nav-link text-dark mx-4 py-4 fs-5" href="#">Home</a>
+                </li>
+                <li class="nav-item nav__list__item fw-bold">
+                  <a class="nav-link text-dark mx-4 py-4 fs-5" href="#">Features</a>
+                </li>
+                <li class="nav-item nav__list__item fw-bold">
+                  <a class="nav-link text-dark mx-4 py-4 fs-5" href="#">Pricing</a>
+                </li>
+                <li class="nav-item nav__list__item fw-bold">
+                  <a class="nav-link text-dark mx-4 py-4 fs-5" href="#">About</a>
+                </li>
+                <li class="nav-item nav__list__item fw-bold">
+                  <a class="nav-link text-dark mx-4 py-4 fs-5" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex mx-5 justify-content-end">
+                  <button class="btn mx-2 fw-bold fs-5" type="submit">Login</button>
+                  <button class="btn text-light button mx-2 py-2 mx-2 fs-5" type="submit">Sign Up</button>
+                </form>
+            </div>
+          </div>
+        </nav>
+        <!-- <div class="container absolute">
           <div class="row align-items-center p-4">
             <div class="col-3 fw-bold text-indigo-600">
               <a href="#" class="logo text-decoration-none fs-2">Besnik</a>
@@ -98,7 +132,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
       </header>
       <!-- Header Code End -->
 
@@ -135,17 +169,17 @@
             <img src="./assets/images/img4.png" alt="" height="820" />
             <div class="circle-200 rounded-circle"></div>
             <div class="circle-50 rounded-circle"></div>
-          </div>
-          <div
-            class="rectangle-1 rounded bg-light d-flex justify-content-start align-items-center"
-          >
-            <div class="circle-50-1 ml-4  d-flex justify-content-start align-items-center mr-5 rounded-circle">
-              <div class="box rounded center">
+            <div
+              class="rectangle-1 rounded bg-light d-flex justify-content-start align-items-center"
+            >
+              <div class="circle-50-1 ml-4  d-flex justify-content-start align-items-center mr-5 rounded-circle">
+                <div class="box rounded center">
+                </div>
               </div>
+              <div class="text-uppercase">
+             <span class="fw-bold fs-4"> 5000+ </span><br>
+              <span class="opacity-50">suitable courses</span>
             </div>
-            <div class="text-uppercase">
-           <span class="fw-bold fs-4"> 5000+ </span><br>
-            <span class="opacity-50">suitable courses</span>
           </div>
           <!-- <div
             class="rectangle-2 rounded bg-light d-flex justify-content-center align-items-center"
@@ -162,7 +196,6 @@
       </section>
       <!-- Hero Section Code End -->
     </div>
-
 
     <!-- Hero Section Code Start -->
       <section class="hero2 container">
