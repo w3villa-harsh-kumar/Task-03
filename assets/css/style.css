@@ -70,7 +70,11 @@ Hero Section
 *******************
 */
 
-.hero__heading {
+.hero1{
+  min-height: 100vh;
+}
+
+.hero1 .hero__heading {
   font-size: 70px !important;
   color: var(--secondary-text-color) !important;
 }
@@ -78,17 +82,15 @@ Hero Section
 .circle-200 {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   background-color: var(--primary-text-color) !important;
   position: absolute;
-  top: 30%;
+  top: 330px;
   right: 0;
 }
 
 .circle-50 {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   background-color: var(--primary-text-color) !important;
   position: absolute;
   bottom: 10%;
@@ -98,7 +100,6 @@ Hero Section
 .circle-50-1 {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
   background-color: var(--primary-text-color) !important;
   margin-left: 10px;
   position: relative;
@@ -121,8 +122,185 @@ Hero Section
   left: 750px;
 }
 
-.box {
+.ircle-50-1 .box {
   width: 40px;
   height: 45px;
   background-color: rgb(225, 226, 228);
+}
+
+.hero2{
+  margin-top: 100px;
+  min-height: 60vh !important;
+}
+
+.hero2 .hero__heading{
+    font-size: 70px;
+    color: var(--secondary-text-color);
+}
+
+.section2 .box__icon{
+  width: 100px;
+  height: 100px;
+}
+
+.section2 .box__text{
+  color: var(--secondary-text-color);
+}
+
+.section3{
+  margin-top: 180px;
+}
+
+.section3 .box-1,
+.section3 .box-2{
+  width: 520px;
+  height: 530px;
+  position: absolute;
+}
+
+.section3 .box-1{
+  background-color: rgb(145, 141, 244);
+}
+
+.section3 .box-2{
+  margin-top: -30px;
+  margin-left : 30px;
+  background-color: #c8f4f8;
+}
+
+.section3 .text__box1{
+  height: 170px;
+  position: absolute;
+  top: 60px;
+  left: 4%;
+  box-shadow: 0 0 20px -16px black;
+}
+
+.section3 .text__box2{
+  height: 170px;
+  position: absolute;
+  top: 270px;
+  left: -15%;
+  box-shadow: 0 0 20px -16px black;
+}
+
+.section3 .text__box1 .rounded-circle,
+.section3 .text__box2 .rounded-circle{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.section3 .img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.section3 .text__box1 .text__box__heading,
+.section3 .text__box2 .text__box__heading{
+  color: var(--secondary-text-color);
+}
+
+.section3 .box__heading{
+  color: var(--secondary-text-color);
+}
+
+.section4 .main__heading{
+  color: var(--secondary-text-color);
+}
+
+.section4 .upper .link a{
+    color: var(--primary-text-color) !important;
+}
+
+
+.card-img{
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.section4 .courses .card-img img{
+  object-fit: cover;
+  height: 500px;
+}
+
+.card-text{
+  width: 80%;
+  position: absolute;
+  bottom: -25%;
+  right: 6%;
+  box-shadow: 0 0 20px -16px black
+}
+
+.card-text .price,
+.card-text .heading{
+  color: var(--secondary-text-color);
+}
+
+.newsletter{
+  margin-top: 250px;
+}
+
+.newsletter .heading{
+  color: var(--secondary-text-color);
+}
+
+.input__container{
+  margin: 60px 0;
+  width: 80%;
+  height: 10%;
+  position: relative;
+}
+
+.input__container input{
+  padding: 40px 40px;
+  width: 80%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 25px;
+  margin: auto;
+}
+
+.button__container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.button__container .button {
+  height: 100%;
+}
+
+.footer__section{
+  min-height: 60vh;
+  max-height: 60vh;
+  margin-top: 130px;
+}
+
+.footer__section .main__heading{
+  color: var(--primary-text-color);
+}
+
+.footer__section .heading{
+  color: var(--secondary-text-color);
+}
+
+.footer__section .links {
+  list-style: none;
+}
+
+.footer__section .link__social{
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color) !important;
+  margin: auto 0;
+}
+
+.footer__section .copyright{
+  margin-top: 100px;
 }
