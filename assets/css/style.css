@@ -176,6 +176,7 @@ what we provide section
 }
 
 .what-we-provide .lower .left .text__box1 {
+  width: 100%;
   height: 170px;
   position: absolute;
   top: 60px;
@@ -184,10 +185,10 @@ what we provide section
 }
 
 .what-we-provide .lower .left .text__box2 {
+  width: 100%;
   height: 170px;
   position: absolute;
   top: 270px;
-  left: -15%;
   box-shadow: 0 0 20px -16px black;
 }
 
@@ -360,49 +361,27 @@ Resposiveness
     display: none !important;
   }
 
-  .what-we-provide .lower .left .box-1,
-  .what-we-provide .lower .left .box-2 {
-    width: 320px !important;
-    height: 530px !important;
+  .what-we-provide .lower .row{
+    flex-direction: column !important;
   }
 
-  .what-we-provide .lower .left .text__box1 {
-    height: 170px;
-    position: absolute;
-    top: 60px;
-    left: 22px;
-    box-shadow: 0 0 20px -16px black;
+  .what-we-provide .lower .left{
+    padding: 0 !important;
+    width: 80% !important;
+    align-self: center;
   }
 
-  .what-we-provide .lower .left .text__box2 {
-    height: 170px;
-    position: absolute;
-    top: 270px;
-    left: -5%;
-    box-shadow: 0 0 20px -16px black;
-  }
-
-  .what-we-provide .lower .right {
-    margin: 0;
+  .what-we-provide .lower .right{
+    width: 100% !important;
+    margin: 0 !important;
     padding: 0 !important;
   }
 
-  .what-we-provide .lower .right .box__heading,
-  .what-we-provide .lower .right .box__text,
-  .what-we-provide .lower .right .myBtn {
-    margin: 0 !important;
-    padding: 0 15px !important;
-  }
-
-  .what-we-provide .lower .right .box__text {
-    margin: 30px 0;
-  }
-
-  .newsletter .input__container {
-    width: 100%;
-  }
-
-  .newsletter .input__container input {
+  .what-we-provide .lower .left .box-1,
+  .what-we-provide .lower .left .box-2 {
+    width: 100% !important;
+    height: 530px !important;
+  }  .newsletter .input__container input {
     width: 100%;
     padding: 20px 20px;
     flex-direction: column;
@@ -429,26 +408,25 @@ Resposiveness
       border-radius: 5px;
     }
 
+    .what-we-provide .lower .row{
+      flex-direction: column !important;
+    }
+  
+    .what-we-provide .lower .left{
+      width: 80% !important;
+      align-self: center;
+    }
+  
+    .what-we-provide .lower .right{
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  
     .what-we-provide .lower .left .box-1,
     .what-we-provide .lower .left .box-2 {
-      width: 450px !important;
+      width: 100% !important;
       height: 530px !important;
-    }
-
-    .what-we-provide .lower .left .text__box1 {
-      height: 170px;
-      position: absolute;
-      top: 60px;
-      left: 22px;
-      box-shadow: 0 0 20px -16px black;
-    }
-
-    .what-we-provide .lower .left .text__box2 {
-      height: 170px;
-      position: absolute;
-      top: 270px;
-      left: -5%;
-      box-shadow: 0 0 20px -16px black;
     }
 
     .newsletter .input__container {
@@ -463,5 +441,69 @@ Resposiveness
     .newsletter .button__container .button {
       padding: 0rem 10px !important;
     }
+  }
+}
+
+@media screen and (max-width:991px) {
+  .hero .row{
+    flex-direction: column !important;
+  }
+  
+  .hero .left{
+    width: 100% !important;
+  }
+  
+  .hero .right{
+    width: 100% !important;
+    display: flex;
+    align-self: center;
+  }
+
+  .hero .right .img-container{
+    margin: auto;
+  }
+  
+  .what-we-provide .lower .row{
+    flex-direction: column !important;
+  }
+
+  .what-we-provide .lower .left{
+    width: 80% !important;
+    align-self: center;
+  }
+
+  .what-we-provide .lower .right{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .what-we-provide .lower .left .box-1,
+  .what-we-provide .lower .left .box-2 {
+    width: 100% !important;
+    height: 530px !important;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .what-we-provide .lower .row{
+    flex-direction: column !important;
+  }
+
+  .what-we-provide .lower .left{
+    width: 80% !important;
+    align-self: center;
+  }
+
+  .what-we-provide .lower .right{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .what-we-provide .lower .left .box-1,
+  .what-we-provide .lower .left .box-2 {
+    width: 100% !important;
+    height: 530px !important;
   }
 }
