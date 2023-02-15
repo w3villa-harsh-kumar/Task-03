@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* CSS Variables */
 :root {
   --primary-color: #f2e0e0;
   --primary-text-color: rgb(86, 16, 151);
@@ -15,6 +10,12 @@
 Common Styles
 *******************
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main-color {
   background-color: var(--primary-color) !important;
 }
@@ -42,6 +43,7 @@ Common Styles
   border-radius: 100%;
 }
 
+/* Margin & Padding */
 .m-tb {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -62,12 +64,6 @@ Header
 */
 .logo {
   color: var(--primary-text-color);
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
 }
 
 /* 
@@ -310,8 +306,8 @@ Footer Section
 */
 
 .footer__section {
-  min-height: 70vh;
-  max-height: 70vh;
+  min-height: 50vh;
+  max-height: 50vh;
   margin-top: 130px;
 }
 
@@ -335,7 +331,7 @@ Footer Section
 }
 
 .footer__section .copyright {
-  margin-top: 100px;
+  margin: 100px;
 }
 
 /* 
@@ -344,8 +340,23 @@ Resposiveness
 ************************
 */
 
-@media screen and (min-width: 350px) and (max-width: 580px) {
-  .hero .right{
+@media screen and (max-width: 550px) {
+  .navbar {
+    background-color: white !important;
+    padding: 15px 0px;
+    border-bottom: 1px solid #cccccc81;
+  }
+
+  .navabr ul {
+    margin-top: 15px !important;
+  }
+
+  .navbar ul li:hover {
+    background-color: #e3e3e3;
+    border-radius: 5px;
+  }
+
+  .hero .right {
     display: none !important;
   }
 
@@ -371,20 +382,19 @@ Resposiveness
     box-shadow: 0 0 20px -16px black;
   }
 
-  .what-we-provide .lower .right{
+  .what-we-provide .lower .right {
     margin: 0;
     padding: 0 !important;
   }
 
   .what-we-provide .lower .right .box__heading,
   .what-we-provide .lower .right .box__text,
-  .what-we-provide .lower .right .myBtn
-  {
+  .what-we-provide .lower .right .myBtn {
     margin: 0 !important;
     padding: 0 15px !important;
   }
 
-  .what-we-provide .lower .right .box__text{
+  .what-we-provide .lower .right .box__text {
     margin: 30px 0;
   }
 
@@ -397,46 +407,61 @@ Resposiveness
     padding: 20px 20px;
     flex-direction: column;
   }
-  
+
   .newsletter .button__container .button {
     margin: 0 !important;
     padding: 0 10px !important;
   }
-}
 
-@media screen and (min-width: 560px) and (max-width: 780px) {
-  .what-we-provide .lower .left .box-1,
-  .what-we-provide .lower .left .box-2 {
-    width: 450px !important;
-    height: 530px !important;
-  }
+  @media screen and (min-width: 560px) {
+    .navbar {
+      background-color: white !important;
+      padding: 15px 0px;
+      border-bottom: 1px solid #cccccc81;
+    }
 
-  .what-we-provide .lower .left .text__box1 {
-    height: 170px;
-    position: absolute;
-    top: 60px;
-    left: 22px;
-    box-shadow: 0 0 20px -16px black;
-  }
+    .navabr ul {
+      margin-top: 15px !important;
+    }
 
-  .what-we-provide .lower .left .text__box2 {
-    height: 170px;
-    position: absolute;
-    top: 270px;
-    left: -5%;
-    box-shadow: 0 0 20px -16px black;
-  }
+    .navbar ul li:hover {
+      background-color: #e3e3e3;
+      border-radius: 5px;
+    }
 
-  .newsletter .input__container {
-    width: 100%;
-  }
-  
-  .newsletter .input__container input {
-    padding: 26px 20px;
-  }
-  
-  .newsletter .button__container .button {
-    padding: 1.5rem 10px !important;
-  }
+    .what-we-provide .lower .left .box-1,
+    .what-we-provide .lower .left .box-2 {
+      width: 450px !important;
+      height: 530px !important;
+    }
 
+    .what-we-provide .lower .left .text__box1 {
+      height: 170px;
+      position: absolute;
+      top: 60px;
+      left: 22px;
+      box-shadow: 0 0 20px -16px black;
+    }
+
+    .what-we-provide .lower .left .text__box2 {
+      height: 170px;
+      position: absolute;
+      top: 270px;
+      left: -5%;
+      box-shadow: 0 0 20px -16px black;
+    }
+
+    .newsletter .input__container {
+      width: 100% !important;
+    }
+
+    .newsletter .input__container input {
+      width: 100% !important;
+      padding: 26px 20px;
+    }
+
+    .newsletter .button__container .button {
+      padding: 0rem 10px !important;
+    }
+  }
 }
