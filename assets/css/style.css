@@ -10,6 +10,16 @@
 Common Styles 
 *******************
 */
+/* .container{
+  padding: 0;
+} */
+
+
+/* 
+*******************
+Common Styles 
+*******************
+*/
 * {
   margin: 0;
   padding: 0;
@@ -44,18 +54,33 @@ Common Styles
 }
 
 /* Margin & Padding */
-.m-tb {
-  margin-top: 100px;
-  margin-bottom: 100px;
+.p-tb {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.m-t {
-  margin-top: 100px;
+.p-t {
+  padding-top: 100px;
 }
 
-.m-b {
-  margin-bottom: 100px;
+.p-b {
+  padding-bottom: 100px;
 }
+
+@media screen and (max-width:991px) {
+  .p-tb{
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+  .p-t {
+    padding-top: 50px;
+  }
+  
+  .p-b {
+    padding-bottom: 50px;
+  }
+} 
 
 /* 
 *******************
@@ -64,6 +89,18 @@ Header
 */
 .logo {
   color: var(--primary-text-color);
+}
+
+@media screen and (max-width:1400px) {
+  .navbar ul li a{
+    margin: 0 12px !important;
+  }
+
+  .navbar .signUp,
+  .navbar .login{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
 }
 
 /* 
@@ -132,6 +169,18 @@ Hero Section
   margin-left: 10px;
   position: relative;
   margin-right: 14px;
+}
+
+@media screen and (max-width:991px) {
+  .hero .right .rectangle-box-md{
+    top: 15%;
+    left: 0;
+  }
+} 
+@media screen and (max-width:576px) {
+  .hero .right .rectangle-box-md{
+    display: none !important;
+  }
 }
 
 /* 
@@ -215,6 +264,18 @@ what we provide section
   color: var(--secondary-text-color);
 }
 
+@media screen and (max-width:991px) {
+  .what-we-provide .lower .left{
+    align-self: start !important;
+  }
+
+  .what-we-provide .lower .right .box__heading,
+  .what-we-provide .lower .right .box__text,
+  .what-we-provide .lower .right .myBtn{
+    margin-left: 0 !important;
+  }
+}
+
 /* 
 *******************
 Popular courses section
@@ -253,6 +314,8 @@ Popular courses section
 .popular-courses .lower .card-text .heading {
   color: var(--secondary-text-color);
 }
+
+
 
 /* 
 *******************
@@ -307,9 +370,8 @@ Footer Section
 */
 
 .footer__section {
-  min-height: 50vh;
-  max-height: 50vh;
-  margin-top: 130px;
+  min-height: 100%;
+  padding-top: 123px;
 }
 
 .footer__section .main__heading {
@@ -343,7 +405,6 @@ Resposiveness
 
 @media screen and (max-width: 560px) {
   .navbar {
-    background-color: white !important;
     padding: 15px 0px;
     border-bottom: 1px solid #cccccc81;
   }
